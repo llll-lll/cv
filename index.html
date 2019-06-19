@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!--doc type and HTML version-->
+<html lang="en" dir="ltr">
+
+<head>
+  <!--head holds info about the web page and tells the browser how it should handle the page-->
+  <meta charset="utf-8">
+  <!--various meta elements give extra meta/associated
+       data to HTML doc. meta's attributes tells browser how it should render or display the web page,
+       also give info to search engines about the content of this web site (meta description).
+       in this case, tell the browser that all the text
+       in this page is coded using the UTF8 encoding system.
+       乱码＝mojibake = characters that are transformed.
+       occurs b/c browser is render the characters using the wrong character set.
+       different types of encoding specialized for different languages.
+       windows greek symbol chart
+       UTF-8 is the standard encoding for HTML 5 b/c it includes all international symbols and emojis.
+       Unicode-table.com
+       background reading: Joel. The absolute Min every software developer absolutely, positively must use UTF8
+      -->
+  <title>Jo's Personal Site</title>
+</head>
+
+<body>
+  <!--content of the website-->
+  <table>
+    <tr>
+      <td><img src="profile pic.jpg" alt="profile picture"></td>
+      <td>
+        <h1>Jo</h1>
+        <!--indent: neat and tidy. shows the structures of the code.-->
+        <p><em>A lifelong learner on <strong><a href="https://baike.baidu.com/item/地球/6431?fr=aladdin">the Earth</a></strong></em></p>
+        <!--italic: <em> and <i>. <em> emphsize and stress the text. <i> only italicize and style the text.
+        always use emphsis b/c it conveys more info and it isn't just about the style.
+        when writing HTML code, we're more concerned about strcturing our text
+        rather than caring about how it looks or how it appears.
+        similar <b> vs. <strong>. <strong> is better bc confers meaning that this text has strong importance
+        and therefore it's displayed in bold rather than merely saying that this should be styled
+        so that it's darker than the rest of the text.
+        -->
+        <p>
+          I learned chemistry, a bit computer science and a bit environmental science at the college
+          and now learning web development as well as UI design.
+        </p>
+      </td>
+    </tr>
+  </table>
+
+
+
+
+  <hr>
+  <h3>Education</h3>
+  <p>
+    China -> U.S. -> China
+    <!--<ul> = unordered list / bullet list-->
+    <ul>
+      <!--注意层级怎样划分-->
+      <li>Chemistry</li>
+      <ul>
+        <li>General chemistry</li>
+        <li>Organic chemistry</li>
+        <li>Inorganic chemistry</li>
+        <li>Physical chemistry</li>
+      </ul>
+      <li>UI design</li>
+      <ul>
+        <li>Axure</li>
+        <li><a href="https://org.modao.cc/app/11ac94ec2f3aeeafe1331594cdae8eef">MockingBot</a></li>
+      </ul>
+      <li>Tableau</li>
+      <li>Word, Excel and Powerpoint</li>
+      <li>Sketchup</li>
+    </ul>
+  </p>
+<hr>
+  <h3>Work experience</h3>
+  <table>
+    <tr>
+      <td>Time</td>
+      <td>Location</td>
+    </tr>
+    <tr>
+      <td>2010-2013</td>
+      <td>lab A</td>
+    </tr>
+    <tr>
+      <td>2011</td>
+      <td>lab B</td>
+    </tr>
+  </table>
+  <h3><a href="hobbies.html">My Hobbies</a></h3>
+
+  <img src="source" alt="image description">
+  <!--image tag is self-closing, but attribute is necessary to indicate the source.
+    source can be url and local images that's included in the same directory as the website.
+  <alt> alternative text, in case the browser can't render the image
+  then it will simply display an alternative text (image description) to the user.
+also optimize in search engine and get website ranking for certain keywords.
+红色大X：means the image is no longer available or the image is no longer hosted at the address that specified in the source.
+-->
+  <p>
+    <a href="contact.html">Contact info</a>
+  </p>
+  <a download href="https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf">Download HTML Cheatsheet</a>
+<hr>
+  <h3>Skills</h3>
+  <table cellspacing = "10">
+      <tr>
+        <td>Organic Chemistry</td>
+        <td>em</td>
+        </tr>
+      <tr>
+      <td>Inorganic chemistry</td>
+          <td>em</td>
+      </tr>
+      <tr>
+        <td>Physical chemistry</td>
+        <td>em</td>
+<tr>
+  <td>Java</td>
+  <td>em</td>
+</tr>
+
+</body>
+
+</html>
